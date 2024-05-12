@@ -1,6 +1,6 @@
 - name: nginx connection
   hosts: localhost
-  beocme: yes
+  become: yes
   tasks: 
     - name: now we are Installing nginx
       ansible.builtin.dnf:
