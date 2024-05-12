@@ -1,7 +1,7 @@
 - name: just connecting to Node
   hosts: web
   tasks:
-  - name: just ping pong
-     ansible.builtin.ping:
+    - name: just ping pong
+      ansible.builtin.ping:
 
 
