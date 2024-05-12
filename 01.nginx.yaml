@@ -1,0 +1,16 @@
+- name: nginx connection
+  hosts: web
+  beocme: yes
+  tasks: 
+    - name: now we are Installing nginx
+      ansible.builtin.dnf:
+        name: nginx
+        state: latest
+
+    - name: Ansible starting nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: yes
+
+
