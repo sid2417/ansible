@@ -1,5 +1,5 @@
 - name: installing Nginx 
-  hosts: web
+  hosts: localhost
   become: yes # equal to -b in adhoc commands, getting root access
   tasks:
     - name: first install nginx
