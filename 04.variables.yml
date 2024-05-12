@@ -6,4 +6,4 @@
   tasks:
     - name: print Mentioned user and password
       ansible.builtin.debug:
-        msg: " {{USER}} {{PASSWORD}} "
+        msg: "Hi, I am {{USER}}, I am doing {{PASSWORD}} Daily"
