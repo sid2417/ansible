@@ -1,0 +1,11 @@
+- name: Checking Overriding concept here overriding is nth but task level
+  hosts: localhost
+  vars:
+    SALARY: one-lakh
+    USER: "Happy it means me"
+    JOB: devops
+  tasks:
+    - name: This is task level overriding
+      ansible.builtin.debug:
+        msg: "My name is {{USER}}, i got selected MNC, my role is {{JOB}} engineer, my pasckage per monthly is {{SALARY}} "
+        
