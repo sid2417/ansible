@@ -1,8 +1,8 @@
 - name: printing variables
   hosts: localhost
   vars:
-    USER=Happy
-    PASSWORD=yoga
+    USER: Happy
+    PASSWORD: yoga
   tasks:
     - name: print Mentioned user and password
       ansible.builtin.debug:
