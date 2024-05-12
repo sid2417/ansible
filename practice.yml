@@ -1,0 +1,20 @@
+- name: just connecting to Node
+  hosts: web
+  tasks:
+  - name: just ping pong
+     ansible.builtin.ping:
+
+
+- name: nginx connection
+  hosts: web
+  beocme: yes
+  tasks: 
+  - name: now we are Installing nginx
+     ansible.builtin.dnf:
+     name: nginx
+     state: latest
+
+  - name: Ansible starting nginx
+    ansible.builtin.service:
+    name: nginx
+    enabled: yes
