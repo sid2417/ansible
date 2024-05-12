@@ -6,6 +6,8 @@
     JOB: devops
   tasks:
     - name: This is task level overriding
+      vars:
+        USER: Siddhartha
       ansible.builtin.debug:
         msg: "My name is {{USER}}, i got selected MNC, my role is {{JOB}} engineer, my pasckage per monthly is {{SALARY}} "
-        
+
