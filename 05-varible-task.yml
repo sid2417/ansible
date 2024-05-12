@@ -11,3 +11,6 @@
       ansible.builtin.debug:
         msg: "My name is {{USER}}, i got selected MNC, my role is {{JOB}} engineer, my pasckage per monthly is {{SALARY}} "
 
+    - name: Now here it is printing values from play level, Here there is NO overriding
+      ansible.builtin.debug:
+        msg: "My name is {{USER}}, i got selected MNC, my role is {{JOB}} engineer, my pasckage per monthly is {{SALARY}} "
